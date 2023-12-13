@@ -1,0 +1,48 @@
+import java.io*;
+
+public class Kelvin { 
+	// change the name of this class to Kelvin!
+	
+	public static final double ZEROC_IN_KELVIN = 273.15;
+	// constant for converting Celsius to Kelvin
+	
+	private double kelvin; 
+	// field to hold the single Kelvin temperature
+	
+	/** 
+	 * Write a Kelvin constructor to set the kelvin field to 0.
+	 *
+	 */
+	 
+	public Kelvin() {
+		// TODO: write your code here
+	}
+	
+	/** 
+	 * Write a Kelvin constructor to set the kelvin field from
+	 * a double parameter. If the parameter value is less than
+	 * zero, throw an IllegalArgumentException.
+	 *
+	 * @param k - the provided Kelvin temperature
+	 *
+	 */
+	 
+	public Kelvin(double k) {
+		// TODO: write your code here, including throwing the
+		// indicated Exception as required.
+	}
+	
+	// provided "getter" (mutator) methods for 3 types of temperature
+	
+	public double getK() { // Kelvin temperature
+		return kelvin;
+	}
+	
+	public double getC() { // equivalent Celsius temperature
+		return kelvin - ZEROC_IN_KELVIN;
+	}
+	
+	public double getF() { // equivalent Fahrenheit temperature
+		return getC() * 9 / 5 + 32;
+	}
+}
